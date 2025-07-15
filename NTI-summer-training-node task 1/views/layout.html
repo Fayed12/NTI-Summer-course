@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        body {
+            background: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding: 2rem;
+            gap: 1.5rem;
+            min-height: 100vh;
+        }
+        .card {
+            background: #0A1F44;
+            color: white;
+            padding: 2rem;
+            padding-top: 10px;
+            width: 300px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+        .card:hover {
+            transform: translateY(-5px);   
+        }
+        .card h1 {
+            font-size: 18px;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        .card p {
+            font-size: 13px;
+            line-height: 1.6;
+            color: white;
+            text-align: justify;
+        }
+        .back-link {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            margin-bottom: 10px;
+            font-size: 17px;
+        }
+        .back-link a{
+            text-decoration: none;
+            font-size: 13px;
+            color: white;
+            background-color: #1f2937;
+            padding: 4px 10px;
+            border-radius: 10px;
+        }
+        .product__back {
+            text-decoration: none;
+            color: #1f2937;
+            font-weight: bold;
+            font-size: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            background-color: #e5e7eb;
+            transition: background 0.2s ease;
+        }
+        .product__back:hover {
+            background-color: #d1d5db;
+        }
+        .card-link{
+            text-decoration: none;
+            font-size: 13px;
+            color: white;
+            background-color: #1f2937;
+            padding: 4px 10px;
+            border-radius: 10px;
+        } 
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>{% block title %}My Posts{% endblock %}</title>
+    </head>
+    <body>
+        {% block content %}{% endblock %}
+    </body>
+</html>

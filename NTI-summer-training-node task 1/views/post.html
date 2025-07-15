@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}تفاصيل البوست{% endblock %}
+
+{% block content %}
+<div class="card">
+        <div class="back-link">
+            <a href="/home">
+                <span><i class="fa-solid fa-house"></i></span>
+            </a>
+        </div>
+        <h1>id= {{id}}</h1> 
+        <h1> {{title}}</h1>
+        <p>{{ body }}</p>
+        <!-- <a class="card-link" href="/post?id={{id}}">
+            <span>Detail<span>
+        </a> -->
+    </div>
+{% endblock %}
